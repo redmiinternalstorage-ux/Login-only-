@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Liquor store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      .payment-details {
+        display: none;
+        border: 1px solid rgba(0,0,0,0.05);
+        border-radius: 6px;
+        padding: 15px;
+        margin-bottom: 20px;
+        background: #fafafa;
+      }
+      .payment-details .form-group label {
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .payment-instructions {
+        font-size: 14px;
+        background: #e9f4ff;
+        border-left: 4px solid #007bff;
+        padding: 12px 16px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        display: none;
+      }
+      .payment-warning {
+        display: none;
+        font-size: 14px;
+        color: #721c24;
+        background: #f8d7da;
+        border: 1px solid #f5c6cb;
+        padding: 10px 14px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+
+	<div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 d-flex align-items-center">
+						<p class="mb-0 phone pl-md-2">
+							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +91 9825434676</a> 
+							<a href="#"><span class="fa fa-paper-plane mr-1"></span> arpitkpatel2025@gmail.com</a>
+						</p>
+					</div>
+					<div class="col-md-6 d-flex justify-content-md-end">
+						<div class="social-media mr-4">
+			    		<p class="mb-0 d-flex">
+			    			<a href="https://www.facebook.com/" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+			    			<a href="https://x.com/?lang=en-in" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+			    			<a href="https://www.instagram.com/" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+			    			
+			    		</p>
+		        </div>
+		        <div class="reg">
+		        	<p class="mb-0"><a href="adminform.html" class="mr-2">Admin</a> <a href="userform.html">Log In</a></p>
+		        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+  	
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Liquor <span>store</span></a>
+      <div class="order-lg-last btn-group">
+          <a href="#" class="btn-cart dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          	<span class="flaticon-shopping-bag"></span>
+          	<div class="d-flex justify-content-center align-items-center"><small data-cart-count>0</small></div>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right js-mini-cart">
+            <div class="dropdown-item text-center text-muted small" data-cart-empty>Your cart is empty</div>
+            <div class="mini-cart-items" data-cart-items></div>
+				    <div class="dropdown-divider"></div>
+				    <a class="dropdown-item text-center btn-link d-block w-100" href="cart.html">
+				    	View All
+				    	<span class="ion-ios-arrow-round-forward"></span>
+				    </a>
+				  </div>
+        </div>
+
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+              	<a class="dropdown-item" href="product.html">Products</a>
+                <a class="dropdown-item" href="product-single.html">Single Product</a>
+                <a class="dropdown-item" href="cart.html">Cart</a>
+                <a class="dropdown-item" href="checkout.html">Checkout</a>
+              </div>
+            </li>
+	          <li class="nav-item	"><a href="blog.html" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate mb-5 text-center">
+          	<p class="breadcrumbs mb-0"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Checkout <i class="fa fa-chevron-right"></i></span></p>
+            <h2 class="mb-0 bread">Checkout</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center">
+          <div class="col-xl-10 ftco-animate">
+						<form action="submit_checkout.php" method="POST" class="billing-form" id="checkoutForm">
+							<div id="checkout-message" style="display: none; padding: 15px; margin-bottom: 20px; border-radius: 5px;"></div>
+							<h3 class="mb-4 billing-heading">Billing Details</h3>
+	          	<div class="row align-items-end">
+	          		<div class="col-md-6">
+	                <div class="form-group">
+	                	<label for="firstname">First Name</label>
+	                  <input type="text" class="form-control" name="first_name" id="firstname" placeholder="" required>
+	                </div>
+	              </div>
+	              <div class="col-md-6">
+	                <div class="form-group">
+	                	<label for="lastname">Last Name</label>
+	                  <input type="text" class="form-control" name="last_name" id="lastname" placeholder="" required>
+	                </div>
+                </div>
+                <div class="w-100"></div>
+		            <div class="col-md-12">
+		            	<div class="form-group">
+		            		<label for="country">State / Country</label>
+		            		<div class="select-wrap">
+		                  <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+		                  <select name="state_country" id="country" class="form-control" required>
+		                  	<option value="">Select State/Country</option>
+		                  	<option value="Andhra Pradesh">Andhra Pradesh</option>
+		                  	<option value="Assam">Assam</option>
+		                  	<option value="Chhattisgarh">Chhattisgarh</option>
+		                  	<option value="Goa">Goa</option>
+		                  	<option value="Haryana">Haryana</option>
+		                  	<option value="Himachal Pradesh">Himachal Pradesh</option>
+		                  	<option value="Jharkhand">Jharkhand</option>
+		                  	<option value="Karnataka">Karnataka</option>
+		                  	<option value="Kerala">Kerala</option>
+		                  	<option value="Madhya Pradesh">Madhya Pradesh</option>
+		                  	<option value="Maharashtra">Maharashtra</option>
+		                  	<option value="Delhi">Delhi</option>
+		                  	<option value="Tamil Nadu">Tamil Nadu</option>
+		                  	<option value="Uttar Pradesh">Uttar Pradesh</option>
+		                  	<option value="West Bengal">West Bengal</option>
+		                    <option value="France">France</option>
+		                    <option value="Italy">Italy</option>
+		                    <option value="Philippines">Philippines</option>
+		                    <option value="South Korea">South Korea</option>
+		                    <option value="Hongkong">Hongkong</option>
+		                    <option value="Japan">Japan</option>
+		                  </select>
+		                </div>
+		            	</div>
+		            </div>
+		            <div class="w-100"></div>
+		            <div class="col-md-6">
+		            	<div class="form-group">
+	                	<label for="streetaddress">Street Address</label>
+	                  <input type="text" class="form-control" name="street_address" id="streetaddress" placeholder="House number and street name" required>
+	                </div>
+		            </div>
+		            <div class="col-md-6">
+		            	<div class="form-group">
+	                  <input type="text" class="form-control" name="apartment" id="apartment" placeholder="Appartment, suite, unit etc: (optional)">
+	                </div>
+		            </div>
+		            <div class="w-100"></div>
+		            <div class="col-md-6">
+		            	<div class="form-group">
+	                	<label for="towncity">Town / City</label>
+	                  <input type="text" class="form-control" name="town_city" id="towncity" placeholder="" required>
+	                </div>
+		           
+		            </div>
+		            <div class="w-100"></div>
+		            <div class="col-md-6">
+	                <div class="form-group">
+	                	<label for="phone">Phone</label>
+	                  <input type="text" class="form-control" name="phone" id="phone" placeholder="" required>
+	                </div>
+	              </div>
+	              <div class="col-md-6">
+	                <div class="form-group">
+	                	<label for="emailaddress">Email Address</label>
+	                  <input type="email" class="form-control" name="email" id="emailaddress" placeholder="" required>
+	                </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-12">
+                	<div class="form-group mt-4">
+										<div class="radio">
+										  <label class="mr-3"><input type="radio" name="optradio"> Create an Account? </label>
+										  <label><input type="radio" name="optradio"> Ship to different address</label>
+										</div>
+									</div>
+                </div>
+	            </div>
+	          <div class="row mt-5 pt-3 d-flex">
+	          	<div class="col-md-6 d-flex">
+	          		<div class="cart-detail cart-total p-3 p-md-4">
+	          			<h3 class="billing-heading mb-4">Cart Total</h3>
+	          			<p class="d-flex">
+		    						<span>Subtotal</span>
+		    						<span>$20.60</span>
+		    					</p>
+		    					<p class="d-flex">
+		    						<span>Delivery</span>
+		    						<span>$0.00</span>
+		    					</p>
+		    					<p class="d-flex">
+		    						<span>Discount</span>
+		    						<span>$3.00</span>
+		    					</p>
+		    					<hr>
+		    					<p class="d-flex total-price">
+		    						<span>Total</span>
+		    						<span>$17.60</span>
+		    					</p>
+								</div>
+	          	</div>
+	          	<div class="col-md-6">
+	          		<div class="cart-detail p-3 p-md-4">
+	          			<h3 class="billing-heading mb-4">Payment Method</h3>
+									<div id="payment-warning" class="payment-warning"></div>
+									<div id="payment-instructions" class="payment-instructions"></div>
+									<div class="form-group">
+										<div class="col-md-12">
+											<div class="radio">
+											   <label><input type="radio" name="payment_method" value="Direct Bank Transfer" class="mr-2" required> Direct Bank Transfer</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-md-12">
+											<div class="radio">
+											   <label><input type="radio" name="payment_method" value="Check Payment" class="mr-2" required> Check Payment</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-md-12">
+											<div class="radio">
+											   <label><input type="radio" name="payment_method" value="Paypal" class="mr-2" required> Paypal</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-md-12">
+											<div class="radio">
+											   <label><input type="radio" name="payment_method" value="UPI" class="mr-2" required> UPI</label>
+											</div>
+										</div>
+									</div>
+
+									<div id="payment-details-bank" class="payment-details" data-method="Direct Bank Transfer">
+										<p class="mb-3"><strong>Transfer Instructions:</strong> Use the details below to complete a secure bank transfer and enter the reference number so we can verify it quickly.</p>
+										<div class="form-group">
+											<label for="bankAccountName">Account Holder Name</label>
+											<input type="text" id="bankAccountName" name="bank_account_name" class="form-control" data-required-for="Direct Bank Transfer" placeholder="e.g. John Doe">
+										</div>
+										<div class="form-group">
+											<label for="bankReference">Transfer Reference / UTR</label>
+											<input type="text" id="bankReference" name="bank_reference" class="form-control" data-required-for="Direct Bank Transfer" placeholder="Enter the UTR or transaction reference number">
+										</div>
+									</div>
+
+									<div id="payment-details-check" class="payment-details" data-method="Check Payment">
+										<p class="mb-3"><strong>Check Instructions:</strong> Provide the cheque details so that we can reserve your order until the check is cleared.</p>
+										<div class="form-group">
+											<label for="checkHolder">Cheque Holder Name</label>
+											<input type="text" id="checkHolder" name="check_holder" class="form-control" data-required-for="Check Payment" placeholder="e.g. John Doe">
+										</div>
+										<div class="form-group">
+											<label for="checkNumber">Cheque Number</label>
+											<input type="text" id="checkNumber" name="check_number" class="form-control" data-required-for="Check Payment" placeholder="Enter cheque number">
+										</div>
+									</div>
+
+									<div id="payment-details-paypal" class="payment-details" data-method="Paypal">
+										<p class="mb-3"><strong>PayPal Instructions:</strong> Enter the PayPal email that will be used to send the payment request.</p>
+										<div class="form-group">
+											<label for="paypalEmail">PayPal Email</label>
+											<input type="email" id="paypalEmail" name="paypal_email" class="form-control" data-required-for="Paypal" placeholder="paypal@example.com">
+										</div>
+									</div>
+
+									<div id="payment-details-upi" class="payment-details" data-method="UPI">
+										<p class="mb-3"><strong>UPI Instructions:</strong> Enter the UPI ID you will use to pay. We will send a collect request for the order total.</p>
+										<div class="form-group">
+											<label for="upiId">UPI ID</label>
+											<input type="text" id="upiId" name="upi_id" class="form-control" data-required-for="UPI" placeholder="yourname@bank">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="paymentNotes">Payment Notes (optional)</label>
+										<textarea id="paymentNotes" name="payment_notes" class="form-control" rows="3" placeholder="Share anything we should know about this payment."></textarea>
+									</div>
+
+									<div class="form-group">
+										<div class="col-md-12">
+											<div class="checkbox">
+											   <label><input type="checkbox" name="terms_accepted" value="1" class="mr-2" required> I have read and accept the terms and conditions</label>
+											</div>
+										</div>
+									</div>
+									<input type="hidden" name="subtotal" value="20.60">
+									<input type="hidden" name="delivery" value="0.00">
+									<input type="hidden" name="discount" value="3.00">
+									<input type="hidden" name="total" value="17.60">
+									<button type="submit" class="btn btn-primary py-3 px-4">Place an order</button>
+								</div>
+	          	</div>
+	          </div>
+	          </form>
+          </div> <!-- .col-md-8 -->
+        </div>
+    	</div>
+    </section>
+
+    <footer class="ftco-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo"><a href="#">Liquor <span>Store</span></a></h2>
+              <p>Far far away, behind the word mountains, far from the countries.</p>
+              <ul class="ftco-footer-social list-unstyled mt-2">
+                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">My Accounts</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>My Account</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Register</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Log In</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>My Order</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About us</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Catalog</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact us</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Quick Link</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>New User</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Help Center</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Report Spam</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Faq's</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid px-0 py-5 bg-black">
+      	<div class="container">
+      		<div class="row">
+	          <div class="col-md-12">
+		
+	            <p class="mb-0" style="color: rgba(255,255,255,.5);"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+	  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	          </div>
+	        </div>
+      	</div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+  <script src="js/shop-state.js"></script>
+  <script src="js/main.js"></script>
+  
+  <script>
+    // Check for success or error message in URL
+    window.onload = function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const checkoutMsg = document.getElementById('checkout-message');
+      
+      if (urlParams.get('error') === '1') {
+        checkoutMsg.style.display = 'block';
+        checkoutMsg.style.backgroundColor = '#f8d7da';
+        checkoutMsg.style.color = '#721c24';
+        checkoutMsg.style.border = '1px solid #f5c6cb';
+        checkoutMsg.innerHTML = '<strong>Error!</strong> Please fill in all required fields.';
+        window.history.replaceState({}, document.title, window.location.pathname);
+      } else if (urlParams.get('error') === 'db') {
+        checkoutMsg.style.display = 'block';
+        checkoutMsg.style.backgroundColor = '#f8d7da';
+        checkoutMsg.style.color = '#721c24';
+        checkoutMsg.style.border = '1px solid #f5c6cb';
+        const dbMsg = urlParams.get('msg') || 'Database error occurred';
+        checkoutMsg.innerHTML = '<strong>Database Error!</strong> ' + decodeURIComponent(dbMsg);
+        window.history.replaceState({}, document.title, window.location.pathname);
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const methodRadios = document.querySelectorAll('input[name="payment_method"]');
+      const detailSections = document.querySelectorAll('.payment-details');
+      const instructions = document.getElementById('payment-instructions');
+      const warningEl = document.getElementById('payment-warning');
+      const checkoutForm = document.getElementById('checkoutForm');
+      const requiredInputs = document.querySelectorAll('[data-required-for]');
+
+      const methodMessages = {
+        'Direct Bank Transfer': 'Transfer the total to our account and share the UTR/Reference so we can verify it within 15 minutes.',
+        'Check Payment': 'Your order will be marked as reserved once we verify the cheque details. Delivery happens after clearance.',
+        'Paypal': 'We will send a PayPal payment request to the email you provide. You can also pay directly to payments@liquorstore.com.',
+        'UPI': 'We will send you a collect request on the provided UPI ID. Approve the request to confirm the order instantly.'
+      };
+
+      function updateRequiredFields(activeMethod) {
+        requiredInputs.forEach((input) => {
+          const methods = input.dataset.requiredFor.split(',').map(item => item.trim());
+          if (methods.includes(activeMethod)) {
+            input.setAttribute('required', 'required');
+          } else {
+            input.removeAttribute('required');
+          }
+        });
+      }
+
+      function showSectionFor(method) {
+        let hasMatch = false;
+        detailSections.forEach((section) => {
+          if (section.dataset.method === method) {
+            section.style.display = 'block';
+            hasMatch = true;
+          } else {
+            section.style.display = 'none';
+          }
+        });
+
+        if (method && methodMessages[method]) {
+          instructions.style.display = 'block';
+          instructions.textContent = methodMessages[method];
+        } else {
+          instructions.style.display = 'none';
+          instructions.textContent = '';
+        }
+
+        warningEl.style.display = 'none';
+        updateRequiredFields(method);
+        
+        if (!hasMatch) {
+          detailSections.forEach(section => section.style.display = 'none');
+        }
+      }
+
+      methodRadios.forEach((radio) => {
+        radio.addEventListener('change', (event) => {
+          showSectionFor(event.target.value);
+        });
+      });
+
+      checkoutForm.addEventListener('submit', function(event) {
+        const selectedMethod = document.querySelector('input[name="payment_method"]:checked');
+        if (!selectedMethod) {
+          warningEl.style.display = 'block';
+          warningEl.textContent = 'Please select a payment method to continue.';
+          event.preventDefault();
+          return;
+        }
+
+        // Basic guard to ensure totals are positive numbers
+        const totalField = checkoutForm.querySelector('input[name="total"]');
+        if (totalField && parseFloat(totalField.value || '0') <= 0) {
+          warningEl.style.display = 'block';
+          warningEl.textContent = 'Order total must be greater than zero before placing an order.';
+          event.preventDefault();
+        }
+      });
+    });
+  </script>
+    
+  </body>
+</html>

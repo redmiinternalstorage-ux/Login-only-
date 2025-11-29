@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome-Registration Liquor Store </title>
+  <style>
+
+   
+    body {
+      background-image: url("images/image_2.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+      color: white;
+      width: 400px;
+      text-align: left;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: lightblue;
+    }
+
+    label {
+      font-size: 18px;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 15px;
+      margin-top: 5px;
+    }
+
+    .radio-group input {
+      width: auto;
+    }
+
+    
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 20px;
+      background: lightblue;
+      border: none;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    #state {
+  text-align: left;
+  direction: ltl;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+}
+
+
+    button:hover {
+      background: deepskyblue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Registration Form</h2>
+
+     
+    <form id="registrationForm" action="submit_user_registration.php" method="POST">
+      <div id="registration-message" style="display: none; padding: 15px; margin-bottom: 20px; border-radius: 5px;"></div>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="your_name" placeholder="Your name" required>
+
+      <label>Gender</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Male" required> Male</label>
+        <label><input type="radio" name="gender" value="Female" required> Female</label>
+      </div>
+
+      <label for="mobile">Mobile No.</label>
+      <input type="text" id="mobile" name="mobile_no" placeholder="10 digit number" maxlength="10" required>
+
+      <label for="email">Email ID</label>
+      <input type="email" id="email" name="email_id" placeholder="name@gmail.com" required>
+
+      <label for="aadhar">Aadhar No.</label>
+      <input type="text" id="aadhar" name="Aadhar_no" placeholder="xxxx xxxx 1234" maxlength="12" required>
+
+<div class="row">
+  <div class="column">
+    <label for="age">Age</label>
+    <input type="number" id="age" name="Age" placeholder="19+" min="19" required style="width: 100px; font-size: 15px; padding: 10px; background-color: white; color: black;">
+  </div>
+  <div class="column">
+    <label for="state">State</label>
+    <select id="state" name="State" required>
+      <option value="">Select State</option>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Assam">Assam</option>
+      <option value="Chhattisgarh">Chhattisgarh</option>
+      <option value="Goa">Goa</option>
+      <option value="Haryana">Haryana</option>
+      <option value="Himachal Pradesh">Himachal Pradesh</option>
+      <option value="Jharkhand">Jharkhand</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Kerala">Kerala</option>
+      <option value="Madhya Pradesh">Madhya Pradesh</option>
+      <option value="Maharashtra">Maharashtra</option>
+      <option value="Manipur">Manipur</option>
+      <option value="Meghalaya">Meghalaya</option>
+      <option value="Odisha">Odisha</option>
+      <option value="Punjab">Punjab</option>
+      <option value="Rajasthan">Rajasthan</option>
+      <option value="Sikkim">Sikkim</option>   
+      <option value="Tamil Nadu">Tamil Nadu</option>   
+      <option value="Telangana">Telangana</option>   
+      <option value="Tripura">Tripura</option>   
+      <option value="Uttarakhand">Uttarakhand</option>   
+      <option value="Uttar Pradesh">Uttar Pradesh</option>   
+      <option value="West Bengal">West Bengal</option>   
+      <option value="Delhi">Delhi</option>      
+    </select>
+  </div></div>
+
+ 
+  <label for="address">Address</label>
+<textarea id="address" name="Address" placeholder="Your Address" rows="4" cols="5" required></textarea>
+
+<style>
+  textarea {
+    width: 400px;
+    height: 120px;
+    text-align: center;         /* Horizontal centering */
+    font-size: 18px;            /* Font size for both input and placeholder */
+    line-height: 25px;         /* Match height for vertical centering */
+    padding: 0;                 /* Remove default padding */
+    resize:none;               /* Prevent resizing */
+    box-sizing: border-box;
+  }
+
+  textarea::placeholder {
+    font-size: 18px;
+    color: #999;
+  }
+</style>
+
+    <p style="color: rgba(245, 7, 7, 0.568); font-size: 10px;">
+  Below 18 years people cannot log in to the website. If any misunderstanding or misguidance arises, the company is not responsible.
+</p>
+
+<label style="font-size: 12px; display: flex; align-items:last baseline;">
+  I confirm that I am above 19 years of age and agree to all the terms above given. I give my true information in form.
+  <input type="checkbox" required style="margin-left: 0px;">
+</label>
+
+    <button type="submit">submit</button>
+    </form>
+
+    <script>
+      // Check for success or error message in URL
+      window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const regMsg = document.getElementById('registration-message');
+        
+        if (urlParams.get('success') === '1') {
+          regMsg.style.display = 'block';
+          regMsg.style.backgroundColor = '#d4edda';
+          regMsg.style.color = '#155724';
+          regMsg.style.border = '1px solid #c3e6cb';
+          regMsg.innerHTML = '<strong>Success!</strong> Your registration has been completed successfully. You can now proceed to the homepage.';
+          // Clear form
+          document.getElementById('registrationForm').reset();
+          // Remove parameter from URL
+          window.history.replaceState({}, document.title, window.location.pathname);
+        } else if (urlParams.get('error') === '1') {
+          regMsg.style.display = 'block';
+          regMsg.style.backgroundColor = '#f8d7da';
+          regMsg.style.color = '#721c24';
+          regMsg.style.border = '1px solid #f5c6cb';
+          regMsg.innerHTML = '<strong>Error!</strong> There was a problem submitting your registration. Please try again.';
+          window.history.replaceState({}, document.title, window.location.pathname);
+        } else if (urlParams.get('error') === 'exists') {
+          regMsg.style.display = 'block';
+          regMsg.style.backgroundColor = '#fff3cd';
+          regMsg.style.color = '#856404';
+          regMsg.style.border = '1px solid #ffeaa7';
+          regMsg.innerHTML = '<strong>Warning!</strong> An account with this email or mobile number already exists.';
+          window.history.replaceState({}, document.title, window.location.pathname);
+        } else if (urlParams.get('error') === 'age') {
+          regMsg.style.display = 'block';
+          regMsg.style.backgroundColor = '#f8d7da';
+          regMsg.style.color = '#721c24';
+          regMsg.style.border = '1px solid #f5c6cb';
+          regMsg.innerHTML = '<strong>Error!</strong> You must be 19 years or older to register.';
+          window.history.replaceState({}, document.title, window.location.pathname);
+        } else if (urlParams.get('error') === 'db') {
+          regMsg.style.display = 'block';
+          regMsg.style.backgroundColor = '#f8d7da';
+          regMsg.style.color = '#721c24';
+          regMsg.style.border = '1px solid #f5c6cb';
+          const dbMsg = urlParams.get('msg') || 'Database error occurred';
+          regMsg.innerHTML = '<strong>Database Error!</strong> ' + decodeURIComponent(dbMsg) + '. Please check your database connection.';
+          window.history.replaceState({}, document.title, window.location.pathname);
+        }
+      };
+    </script>
+    </body>
+    </html>

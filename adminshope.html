@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Shop Form</title>
+  <meta http-equiv="refresh" content="0; url=adminshope.php">
+  <script>
+    window.location.href = "adminshope.php";
+  </script>
+  <style>
+    body {
+      background-image: url("images/image_6.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+      color: white;
+      width: 400px;
+      text-align: left;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: lightblue;
+    }
+
+    label {
+      font-size: 18px;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 20px;
+      background: lightblue;
+      border: none;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: deepskyblue;
+      color: white;
+    }
+
+    .message {
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .error-message {
+      background-color: rgba(255, 0, 0, 0.3);
+      color: #ffcccc;
+      border: 1px solid #ff6666;
+    }
+
+    .success-message {
+      background-color: rgba(0, 255, 0, 0.3);
+      color: #ccffcc;
+      border: 1px solid #66ff66;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Admin Shop Form</h2>
+
+    <?php if (!empty($shop_error)): ?>
+      <div class="message error-message">
+        <?php echo htmlspecialchars($shop_error); ?>
+      </div>
+    <?php endif; ?>
+
+    <?php if (!empty($shop_success)): ?>
+      <div class="message success-message">
+        <?php echo htmlspecialchars($shop_success); ?>
+      </div>
+    <?php endif; ?>
+
+    <form action="submit_admin_shop.php" method="POST" id="shopForm">
+
+      <label for="shopName">Shop Name</label>
+      <input type="text" id="shopName" name="shopName" placeholder="e.g. Super Mart" required>
+
+      <label for="ownerName">Owner Name</label>
+      <input type="text" id="ownerName" name="ownerName" placeholder="Owner's full name" required>
+
+      <label for="contact">Contact Number</label>
+      <input type="text" id="contact" name="contact" placeholder="10 digit number" maxlength="10" required>
+
+      <label for="email">Email ID</label>
+      <input type="email" id="email" name="email" placeholder="example@shop.com" required>
+
+      <label for="gst">GST Number</label>
+      <input type="text" id="gst" name="gst" placeholder="e.g. 81AAAAA0000A9Z5"
+        pattern="\d{2}[A-Z]{5}\d{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}"
+        title="Enter a valid 15-character GSTIN" disabled style="background-color: white;color: black;">
+
+      <label for="address">Shop Address</label>
+      <textarea id="address" name="address" rows="3" placeholder="Full address" required></textarea>
+
+      <label for="quantity">Branches(in units)</label>
+      <input type="number" id="quantity" name="quantity" min="1" placeholder="e.g. 1, 2, 3...  bn" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
